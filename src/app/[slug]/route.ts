@@ -13,5 +13,5 @@ export async function GET(request: Request,
     if (!origin) {
         return new Response("Not available", {status: 404});
     }
-    redirect(origin);
+    redirect(origin + "/?ref=kirbee.tech");
 }
